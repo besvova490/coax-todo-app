@@ -1,5 +1,5 @@
 import React from 'react'
-import TodoListItems from "./todoListItems";
+import TodoListItems from "../todo-list-items";
 
 const style = {
     margin: '1rem auto'

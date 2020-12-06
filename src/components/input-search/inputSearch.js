@@ -12,18 +12,18 @@ export default class InputSearch extends React.Component {
         this.state = {
             label: ''
         }
+    }
 
-        this.onLabelChange = (event) => {
-            this.setState({
-                label: event.target.value
-            })
-        }
+    onLabelChange = (event) => {
+        this.setState({
+            label: event.target.value
+        })
+    }
 
-        this.onSubmit = (event) => {
-            event.preventDefault()
-            this.props.onAdded(this.state.label)
-            this.setState({label: ''})
-        }
+    onSubmit = (event) => {
+        event.preventDefault()
+        this.props.onAdded(this.state.label)
+        this.setState({label: ''})
     }
 
     render() {
