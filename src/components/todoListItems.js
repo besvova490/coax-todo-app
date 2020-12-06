@@ -11,7 +11,7 @@ export default class TodoListItems extends React.Component{
         return (
             <span className='main-span'>
                 <span onClick={onToggleDone} className={classList}>
-                    {label}
+                    {label || 'No todo'}
                 </span>
                 <button type='button'
                         className="btn btn-light todo-span-button"

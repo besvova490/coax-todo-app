@@ -7,22 +7,19 @@ const style = {
 }
 
 export default class App extends React.Component{
-    uncId = 100
     constructor() {
         super();
         this.createItem = (label) => {
             return {
                 label,
                 done: false,
-                id: this.uncId ++,
+                id: Date.now(),
             }
         }
 
         this.state = {
             todosList: [
                 this.createItem('Drink Coffee'),
-                this.createItem('Make React app'),
-                this.createItem('Make api for react app'),
             ]
         };
 
