@@ -1,0 +1,17 @@
+span.done {
+    text-decoration: line-through;
+}
+.main-span {
+    display: flex;
+    justify-content: space-between;
+}
+.todo-span-button {
+    background: none;
+    border-color: #f32424;
+}
+.todo-span-button:hover {
+    border-color: #f53333;
+}
+.span-i-trash {
+    color: #f53333;
+}
